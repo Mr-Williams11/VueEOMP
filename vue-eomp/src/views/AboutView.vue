@@ -1,5 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <div>
+      <h2>{{ info }}</h2>
+    </div>
 </template>
+
+<script>
+  export default {
+    computed: {
+      info() {
+        return this.$store.state.About;
+      },
+    },
+    mounted() {
+      this.$store.dispatch('fetchData');
+    },
+  };
+</script>
+
+<style>
+
+</style>

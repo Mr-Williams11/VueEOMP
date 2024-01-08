@@ -1,34 +1,54 @@
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/project">Projects</router-link> |
-    <router-link to="/resume">Resume</router-link> |
-    <router-link to="/testimonials">Testimonials</router-link> |
-    <router-link to="/contact">Contact</router-link>
-  </nav>
-  <router-view/>
+  <NavView />
+  <FooterView/>
 </template>
 
+<script>
+import FooterView from './components/FooterView.vue';
+import NavView from './components/NavView.vue';
+
+export default{
+  components: { NavView, FooterView }
+}
+</script>
+
 <style>
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(#87CEEB, #1E90FF);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 
-nav {
-  padding: 30px;
+.container-fluid{
+  background-color: transparent;
 }
 
-nav a {
+.nav-link{
+  list-style: none;
+  font-size: 20px;
   font-weight: bold;
-  color: #2c3e50;
+  color: black;
+  text-decoration: none;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.router-link-exact-active {
+  text-decoration: underline;
+}
+
+footer{
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
 }
 </style>

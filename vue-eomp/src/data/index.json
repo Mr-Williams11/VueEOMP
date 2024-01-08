@@ -1,96 +1,95 @@
 {
     "home": [
-    {
-             "intro":"My name is Joel Williams."
-    }
+        {
+                "intro":"Welcome to my Portfolio"
+        }
     ],
     "about": [
-    {
-             "info":"My name is Joel Williams."
-    }
+        {
+                "info":"This is my About Page"
+        }
     ],
-
     "projects": [
-    {
-            "id":1,
-            "taskName":"E-commerce",
-            "github": "https://github.com/Mr-Williams11/JSEOMP.git"
-    },
-    {
-            "id":2,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    },
-    {
-            "id":3,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    },
-    {
-            "id":4,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    },
-    {
-            "id":5,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    },
-    {
-            "id":6,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    }
+        {
+                "id":1,
+                "taskName":"E-commerce",
+                "github": "https://github.com/Mr-Williams11/JSEOMP.git"
+        },
+        {
+                "id":2,
+                "taskName":"Portfolio",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        },
+        {
+                "id":3,
+                "taskName":"Calculator",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        },
+        {
+                "id":4,
+                "taskName":"To-Do-List",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        },
+        {
+                "id":5,
+                "taskName":"BMI",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        },
+        {
+                "id":6,
+                "taskName":"Netflix Clone",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        }
     ],
     "resume": [
-    {
-            "id":1,
-            "taskName":"E-commerce",
-            "github": "https://github.com/Mr-Williams11/JSEOMP.git"
-    },
-    {
-            "id":2,
-            "taskName":"Portfolio",
-            "github": "https://github.com/Mr-Williams11/Portfolio.git"
-    }
+        {
+                "id":1,
+                "taskName":"Skills",
+                "github": "https://github.com/Mr-Williams11/JSEOMP.git"
+        },
+        {
+                "id":2,
+                "taskName":"Work Experience",
+                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+        }
     ],
 
     "testimonials":[
-            {
-            "id":1,
-            "name":"Niyaaz Daniels",
-            "Description": "Joel Williams really knows how to wash cars"
-    },
-    {
-            "id":2,
-            "name":"Jodi Abrahams",
-            "Description": "Joel Williams really knows how to wash dishes lol."
-    },
-    {
-            "id":3,
-            "name":"Jodi Abrahams",
-            "Description": "Joel Williams really knows how to wash dishes lol."
-    },
-    {
-            "id":4,
-            "name":"Jodi Abrahams",
-            "Description": "Joel Williams really knows how to wash dishes lol."
-    },
-    {
-            "id":5,
-            "name":"Jodi Abrahams",
-            "Description": "Joel Williams really knows how to wash dishes lol."
-    },
-    {
-            "id":6,
-            "name":"Jodi Abrahams",
-            "Description": "Joel Williams really knows how to wash dishes lol."
-    }
+        {
+                "id":1,
+                "name":"Niyaaz Daniels",
+                "Description": "Joel Williams really knows how to wash cars"
+        },
+        {
+                "id":2,
+                "name":"Jodi Abrahams",
+                "Description": "Joel Williams really knows how to wash dishes lol."
+        },
+        {
+                "id":3,
+                "name":"Jodie Smith",
+                "Description": "Joel Williams really knows how to wash dishes lol."
+        },
+        {
+                "id":4,
+                "name":"Daanyaal Kellerman",
+                "Description": "Joel Williams really knows how to wash dishes lol."
+        },
+        {
+                "id":5,
+                "name":"Chad Nelson",
+                "Description": "Joel Williams really knows how to wash dishes lol."
+        },
+        {
+                "id":6,
+                "name":"Matthew Brown",
+                "Description": "Joel Williams really knows how to wash dishes lol."
+        }
     ],
     "contact": [
         {
-                 "infomation":"My name is Joel Williams."
+                 "infomation":"This is my contact page"
         }
-        ]
+    ]
 }
 

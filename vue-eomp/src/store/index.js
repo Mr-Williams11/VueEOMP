@@ -5,17 +5,17 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    Home: [],
-    About: [],
+    Intro: '',
+    About: '',
     Projects: [],
     Resume: [],
     Testimonials: [],
-    Contact: [],
+    Contact: '',
   },
   getters: {},
   mutations: {
-    setHome(state, home) {
-      state.Home = home;
+    setIntro(state, intro) {
+      state.Intro = intro;
     },
     setAbout(state, about) {
       state.About = about;
@@ -38,11 +38,11 @@ export default createStore({
       try {
         // Fetching data using Axios
         const homeResponse = await axios.get('http://localhost:3000/home');
-        const aboutResponse = await axios.get('http://localhost:3000/tasks');
-        const projectResponse = await axios.get('http://localhost:3000/reviews');
-        const resumeResponse = await axios.get('http://localhost:3000/reviews');
-        const testimonialsResponse = await axios.get('http://localhost:3000/reviews');
-        const contactResponse = await axios.get('http://localhost:3000/reviews');
+        const aboutResponse = await axios.get('http://localhost:3000/about');
+        const projectResponse = await axios.get('http://localhost:3000/projects');
+        const resumeResponse = await axios.get('http://localhost:3000/resume');
+        const testimonialsResponse = await axios.get('http://localhost:3000/testimonials');
+        const contactResponse = await axios.get('http://localhost:3000/contact');
 
         const homeData = homeResponse.data;
         const aboutData = aboutResponse.data;
@@ -52,12 +52,12 @@ export default createStore({
         const contactData = contactResponse.data;
 
         // Committing mutations to set data in state
-        commit('setHome', homeData[0].intro);
-        commit('setAbout', aboutData);
+        commit('setIntro', homeData[0].intro);
+        commit('setAbout', aboutData[0].info);
         commit('setProjects', projectData);
         commit('setResume', resumeData);
         commit('setTestimonials', testimonialData);
-        commit('setContact', contactData);
+        commit('setContact', contactData[0].infomation);
       } catch (error) {
         console.error('Error fetching data:', error);
       }

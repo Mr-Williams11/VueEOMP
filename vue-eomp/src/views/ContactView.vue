@@ -1,5 +1,18 @@
 <template>
-    <div class="about">
-      <h1>This is a contact page</h1>
+    <div>
+      <h1>{{ information }}</h1>
     </div>
-  </template>
+</template>
+
+<script>
+export default {
+  computed: {
+    information() {
+      return this.$store.state.Contact;
+    },
+  },
+  mounted() {
+      this.$store.dispatch('fetchData');
+    },
+};
+</script>
