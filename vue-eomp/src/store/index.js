@@ -12,13 +12,21 @@ export default createStore({
     Testimonials: [],
     Contact: '',
   },
-  getters: {},
+  getters: {
+
+  },
   mutations: {
     setIntro(state, intro) {
       state.Intro = intro;
     },
-    setAbout(state, about) {
-      state.About = about;
+    setName(state, name) {
+      state.Name = name;
+    },
+    setInfo(state, info) {
+      state.Info = info;
+    },
+    setText1(state, text1) {
+      state.Text1 = text1;
     },
     setProjects(state, projects) {
       state.Projects = projects;
@@ -53,7 +61,9 @@ export default createStore({
 
         // Committing mutations to set data in state
         commit('setIntro', homeData[0].intro);
-        commit('setAbout', aboutData[0].info);
+        commit('setName', homeData[0].name);
+        commit('setInfo', aboutData[0].info);
+        commit('setText1', aboutData[0].text1);
         commit('setProjects', projectData);
         commit('setResume', resumeData);
         commit('setTestimonials', testimonialData);
@@ -63,5 +73,7 @@ export default createStore({
       }
     },
   },
-  modules: {},
+  modules: {
+
+  },
 });

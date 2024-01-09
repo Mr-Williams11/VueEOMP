@@ -1,94 +1,104 @@
 {
     "home": [
         {
-                "intro":"Welcome to my Portfolio"
+                "intro":"Welcome to my Portfolio",
+                "name": "My name is Joel Williams"
         }
     ],
     "about": [
         {
-                "info":"This is my About Page"
+                "info":"About Me:",
+                "text1":"I am Joel Kenneth Williams. I am 21 years old. I am a highly motivated individual with a strong passion for technology and innovation. I am self taught in HTML and CSS."  
         }
     ],
     "projects": [
         {
-                "id":1,
+                "img":"https://drive.google.com/uc?id=1xvotS_xNh6NJA4T_TPX3yUTqk1MRuauT",
                 "taskName":"E-commerce",
                 "github": "https://github.com/Mr-Williams11/JSEOMP.git"
         },
         {
-                "id":2,
+                "img":"https://drive.google.com/uc?id=1-GEOQu2WNw1SBNfNWMwBHwQz5MjA0QUJ",
                 "taskName":"Portfolio",
                 "github": "https://github.com/Mr-Williams11/Portfolio.git"
         },
         {
-                "id":3,
+                "img":"https://drive.google.com/uc?id=1rQORGTDxTreYevYjIz5H_EikBRYU0-iT",
                 "taskName":"Calculator",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+                "github": "https://github.com/Mr-Williams11/calculator.git"
         },
         {
-                "id":4,
+                "img":"https://drive.google.com/uc?id=1qZF6rPV3aGiEKo9kVvAHFZjE1usx9Vvw",
                 "taskName":"To-Do-List",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+                "github": "https://github.com/Mr-Williams11/ToDoList.git"
         },
         {
-                "id":5,
+                "img":"https://drive.google.com/uc?id=1Cfx6woM_1eOIRSEEIc1Ei2rP4LZnU0TT",
                 "taskName":"BMI",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+                "github": "https://github.com/Mr-Williams11/BMI.git"
         },
         {
-                "id":6,
+                "img":"https://drive.google.com/uc?id=12WMaSWjb_7RpJl_PZT4GQTKap-z_LWAr",
                 "taskName":"Netflix Clone",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+                "github": "https://github.com/Mr-Williams11/Netflix1.git"
         }
     ],
     "resume": [
         {
                 "id":1,
                 "taskName":"Skills",
-                "github": "https://github.com/Mr-Williams11/JSEOMP.git"
+                "skill1": "HTML - Advanced",
+                "skill2": "CSS - Advanced",
+                "skill3": "Bootstrap - Intermediate",
+                "skill4": "Javascript - Intermediate"
         },
         {
                 "id":2,
                 "taskName":"Work Experience",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git"
+                "work1": "NMC",
+                "des1":"Clearing and preparation of files for liquidators.",
+                "work2": "Zone Fitness",
+                "des2":"Login and register members. Answer telephones to deal with clients/enquiries. Meet and greet members at the front desk. Assisted with equipment setting up for members. Did personal training procedures.",
+                "work3": "Department of Cultural Affairs and Sport (Internal Control)",
+                "des3":"Post Auditing. Scanning of payment batches. Receiving and storing of payment batches. Minutes of meetings. Delivering of payment batches."
         }
     ],
 
     "testimonials":[
         {
-                "id":1,
+                "img":1,
                 "name":"Niyaaz Daniels",
-                "Description": "Joel Williams really knows how to wash cars"
+                "Description": "Joel is an extremely hardworking person. His dedication and concentration in his work are genuinely astounding. It's a pleasure to work with someone who is so focused and driven."
         },
         {
-                "id":2,
+                "img":2,
                 "name":"Jodi Abrahams",
-                "Description": "Joel Williams really knows how to wash dishes lol."
+                "Description": "Working with Joel has been such a pleasure.. His skills are nothing short of exceptional. Joel delivers on time with high quality websites and style. He has a keen eye for the best."
         },
         {
-                "id":3,
+                "img":3,
                 "name":"Jodie Smith",
                 "Description": "Joel Williams really knows how to wash dishes lol."
         },
         {
-                "id":4,
+                "img":4,
                 "name":"Daanyaal Kellerman",
-                "Description": "Joel Williams really knows how to wash dishes lol."
+                "Description": "Joel is excellent at helping others within the work space, he makes sure that everyone is on the same track whilst improving his own knowledge. Working with Joel is less stressful, as he maintains a high level of professionalism while simultaneously bringing his good sense of humor to the work atmosphere."
         },
         {
-                "id":5,
+                "img":5,
                 "name":"Chad Nelson",
-                "Description": "Joel Williams really knows how to wash dishes lol."
+                "Description": "Joels proficiency in various programming languages and problem-solving skills are truly impressive. Joel's collaborative nature and willingness to share knowledge have made helped me understand more. He's a valuable asset to any development team."
         },
         {
-                "id":6,
+                "img":6,
                 "name":"Matthew Brown",
                 "Description": "Joel Williams really knows how to wash dishes lol."
         }
     ],
     "contact": [
         {
-                 "infomation":"This is my contact page"
+                 "infomation":"Contact Me:"
         }
     ]
 }
