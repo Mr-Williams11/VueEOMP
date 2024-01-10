@@ -9,6 +9,7 @@
           <img :src="project.img" alt="" class="project-img">
           <p class="heading">{{ project.taskName }}</p>
           <a :href="project.github" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
+          <a :href="project.netlify" target="_blank" class="netlify-link"><i class="fa-solid fa-globe"></i></a>
         </div>
       </div>
     </div>
@@ -65,7 +66,7 @@ export default {
   background: linear-gradient(-45deg, white 0%, black 100%);
   z-index: -10;
   pointer-events: none;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card::after {
@@ -87,7 +88,7 @@ export default {
 .github-link {
   position: relative;
   text-align: left;
-  left: 5%;
+  left: 15%;
   margin-top: 8px;
   color: black;
   font-size: 25px;
@@ -108,7 +109,7 @@ export default {
 }
 
 .card:hover::before {
-  transform: translateY(20px);
+  transform: translateY(50px);
 }
 
 .carousel{
