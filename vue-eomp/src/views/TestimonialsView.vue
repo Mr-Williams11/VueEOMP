@@ -1,53 +1,25 @@
 <template>
-  <div class="parallaxousel">
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1q6UqDPBzrH0otqFuCKVXx4Uz8hQWyUHv" alt="A group of monstera leaves"  width="800" height="600" />
-      </picture>
-      <div v-for="testimonial in testimonials" :key="testimonial.id" class="testimonial-card">
-        <figcaption>{{ testimonial.name }}</figcaption>
-        <p>{{ testimonial.Description }}</p>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button v-for="(testimonial, index) in testimonials" :key="index" type="button" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="index" :class="{ active: index === 0 }" aria-label="Slide {{ index + 1 }}"></button>
+    </div>
+    <div class="carousel-inner">
+      <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
+        <div class="card">
+          <img :src="testimonial.img" alt="" class="project-img">
+          <p class="heading">{{ testimonial.name }}</p>
+          <p class="description">{{ testimonial.Description }}</p>
+        </div>
       </div>
-    </figure>
-
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1Bv3WCRCczlDBkd0JsN0G_C0PhPJSeLgi" alt="A hotpink and purple abstract shaped image" width="800" height="600" />
-      </picture>
-      <figcaption>Abstract</figcaption>
-    </figure>
-
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1O_c7Eyg1A4eEWgxouIJWbj8Yco0LC1ly" alt="A group of monstera leaves"  width="800" height="600" />
-      </picture>
-      <figcaption>Monstera</figcaption>
-    </figure>
-
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1q6UqDPBzrH0otqFuCKVXx4Uz8hQWyUHv" alt="A group of monstera leaves"  width="800" height="600" />
-      </picture>
-      <div v-for="testimonial in testimonials" :key="testimonial.id" class="testimonial-card">
-        <figcaption>{{ testimonial.name }}</figcaption>
-        <p>{{ testimonial.Description }}</p>
-      </div>
-    </figure>
-
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1Bv3WCRCczlDBkd0JsN0G_C0PhPJSeLgi" alt="A hotpink and purple abstract shaped image" width="800" height="600" />
-      </picture>
-      <figcaption>Abstract</figcaption>
-    </figure>
-
-    <figure class="parallax-item">
-      <picture>
-        <img src="https://drive.google.com/uc?id=1O_c7Eyg1A4eEWgxouIJWbj8Yco0LC1ly" alt="A group of monstera leaves"  width="800" height="600" />
-      </picture>
-      <figcaption>Monstera</figcaption>
-    </figure>
-    `+`
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </template>
 
@@ -62,116 +34,64 @@ export default {
 </script>
 
 <style scoped>
-  @keyframes squeeze {
-    entry 0% {
-      clip-path: inset(0% 100% 0% 0% round 30px);
-    }
-    entry 100% {
-      clip-path: inset(0% 0% 0% 0% round 30px);
-    }
-    exit 0% {
-      clip-path: inset(0% 0% 0% 0% round 30px);
-    }
-    exit 100% {
-      clip-path: inset(0% 0% 0% 100% round 30px);
-    }
-  }
+.card {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  left: 32%;
+  top: 0;
+  width: 500px;
+  padding: 12px;
+  height: 400px;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 0 30px white;
+}
 
-  @keyframes stay-centered {
-    entry 0% {
-      transform: translateX(-50%);
-    }
-    entry 100% {
-      transform: translateX(0%);
-    }
-    exit 0% {
-      transform: translateX(0%);
-    }
-    exit 100% {
-      transform: translateX(50%);
-    }
-  }
+.project-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  left: 35%;
+  bottom: 40px;
+}
 
-  @keyframes fade-out {
-    to {
-      opacity: 0;
-    }
-  }
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  top: 20%;
+}
 
-  @layer demo {
-    .parallaxousel {
-      container-type: inline-size;
-      display: flex;
-      padding: 2rem;
-      scroll-padding: 2rem;
-      gap: 1rem;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
+.description {
+  line-height: 1.7;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: white;
+  position: relative;
+}
 
-      > .parallax-item {
-        scroll-snap-align: center;
-        flex-shrink: 0;
-      }
-    }
+.card p:last-child {
+  color: white;
+  font-size: 15px;
+}
 
-    .parallax-item {
-      max-inline-size: 70vw;
-      max-block-size: 50vw;
-      display: grid;
-      place-items: end start;
-      animation: squeeze linear both;
-      animation-timeline: view(inline);
-      timeline-scope: --parallax-item;
+.carousel {
+  position: fixed;
+  height: 85vh;
+  top: 5%;
+  width: 100%;
+}
 
-      > * {
-        grid-area: 1/1;
-      }
+.carousel-inner {
+  position: relative;
+  top: 15%;
+}
 
-      > picture {
-        height: 500px;
-      }
-
-      > figcaption {
-        padding: 1rem;
-        font-size: 1.5rem;
-        font-weight: 200;
-        position: sticky;
-        left: 0;
-        animation: fade-out linear both reverse, fade-out linear both;
-        animation-timeline: view(inline);
-        view-timeline: --parallax-item inline;
-        animation-range: entry 90%, contain 90% exit 10%;
-      }
-
-      & img {
-        block-size: 100%;
-        inline-size: 100%;
-        object-fit: cover;
-        animation: stay-centered linear both;
-        animation-timeline: view(inline);
-        timeline-scope: --parallax-item;
-      }
-    }
-  }
-
-  @layer demo.support {
-    * {
-      box-sizing: border-box;
-      margin: 0;
-    }
-
-    html {
-      block-size: 100%;
-      color-scheme: dark light;
-    }
-
-    body {
-      min-block-size: 100%;
-      font-family: system-ui, sans-serif;
-    }
-  }
-
-    img{
-      
-    }
 </style>

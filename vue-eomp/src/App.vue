@@ -48,7 +48,9 @@ body{
 
 footer{
   position: fixed;
-  bottom: 5%;
+  bottom: 0;
   width: 100%;
+  color: black;
+  height: 50px;
 }
 </style>

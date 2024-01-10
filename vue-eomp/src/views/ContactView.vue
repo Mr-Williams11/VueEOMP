@@ -1,22 +1,32 @@
 <template>
-      <h1>{{ information }}</h1>
-    <div class="form">
-            <form  action="https://formspree.io/f/mjvqjgkr" method="POST">
-              <div class="mb-3">
-                <label for="exampleInputName1" class="form-label">Full name</label>
-                <input type="name" class="form-control" id="exampleInputname1" aria-describedby="nameHelp" required>
-              </div>
-              <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputText1" class="form-label">Message</label>
-              <input type="text" class="form-control" id="exampleInputText1" name="message" required>
-            </div>
-            <button id="send" type="submit" class="btn btn-primary">Send</button>
-          </form>
+  <div class="contact-container">
+    <div class="contact-info">
+      <span>{{ information }}</span>
+      <div>
+        <ul>
+          <li>Email: joelwilliams742@gmail.com</li>
+          <li>Phone: 062 771 3590</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mjvqjgkr" method="POST">
+        <div class="form-group">
+          <label for="exampleInputName1" class="form-label">Full name:</label>
+          <input type="name" class="form-control" id="exampleInputname1" aria-describedby="nameHelp" required>
         </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputText1" class="form-label">Message:</label>
+          <textarea class="form-control" id="exampleInputText1" name="message" required></textarea>
+        </div>
+        <button id="send" type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -27,57 +37,73 @@ export default {
     },
   },
   mounted() {
-      this.$store.dispatch('fetchData');
-    },
+    this.$store.dispatch('fetchData');
+  },
 };
 </script>
 
 <style>
-.form {
+.contact-container {
   display: flex;
-  width: 250px;
-  box-sizing: border-box;
-  margin: auto;
-  background-color: black;
-  border: 2px solid #00FF00;
-  padding-bottom: 80px;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
-.form label {
+.contact-info {
   text-align: center;
 }
 
-.form-label {
-  margin-left: 15px;
-  color: #00FF00;
-  font-size: 20px;
+.contact-info span {
+  font-size: 50px;
+  text-decoration: underline;
+  padding-right: 20px;
 }
 
-.form-control {
-  margin-left: 12px;
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.form-group {
   margin-bottom: 20px;
 }
 
-input {
-  color: #00FF00;
-  background-color: #000;
-  outline: none;
-  font-size: 15px;
-  padding: 10px;
-  border: 2px solid #00FF00;
+.form-label {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
 }
-form#send {
-  padding: 20px;
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#send {
+  padding: 10px;
   width: 100%;
   outline: none;
   border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #send:hover {
-  background-color: #00FF00;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00FF00;
+  background-color: #1E90FF;
 }
 </style>

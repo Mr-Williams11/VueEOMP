@@ -8,8 +8,8 @@
         <div class="card">
           <img :src="project.img" alt="" class="project-img">
           <p class="heading">{{ project.taskName }}</p>
-          <a :href="project.github" target="_blank" class="github-link"><i class="fa-brands fa-github"></i></a>
-          <a :href="project.netlify" target="_blank" class="netlify-link"><i class="fa-solid fa-globe"></i></a>
+          <a :href="project.github" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> - GitHub</a>
+          <a :href="project.netlify" target="_blank" class="netlify-link">Netlify - <i class="fa-solid fa-globe"></i></a>
         </div>
       </div>
     </div>
@@ -44,6 +44,7 @@ export default {
   left: 32%;
   width: 500px;
   padding: 12px;
+  height: 340px;
   border-radius: 8px;
 }
 
@@ -83,15 +84,44 @@ export default {
   font-size: 20px;
   text-transform: capitalize;
   font-weight: 700;
+  position: fixed;
+  top: 25%;
+  padding: 10px;
+  color: black;
 }
 
 .github-link {
   position: relative;
   text-align: left;
-  left: 15%;
   margin-top: 8px;
   color: black;
   font-size: 25px;
+  text-decoration: none;
+}
+
+.github-link:hover{
+  padding: 5px;
+  width: fit-content;
+  background-color: black;
+  color: lightblue;
+  box-shadow: 5px 5px 5px white;
+  border-radius: 8px;
+}
+.netlify-link {
+  position: fixed;
+  left: 56%;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.netlify-link:hover{
+  padding: 5px;
+  width: fit-content;
+  background-color: black;
+  color: lightblue;
+  box-shadow: 5px 5px 5px white;
+  border-radius: 8px;
 }
 
 .card p:not(.heading) {
