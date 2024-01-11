@@ -37,7 +37,8 @@ export default {
   height: auto;
   margin-right: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px lightblue;
+  background: linear-gradient(white, black 40%);
 }
 
 .about-content {
@@ -50,14 +51,16 @@ h2 {
   margin-bottom: 10px;
   position: fixed;
   top: 5%;
+  color: white;
 }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.5;
   position: fixed;
   top: 15%;
   text-align: left;
+  color: white;
 }
 
 .about-container {

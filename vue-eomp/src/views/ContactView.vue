@@ -52,6 +52,7 @@ export default {
 
 .contact-info {
   text-align: center;
+  color: white;
 }
 
 .contact-info span {
@@ -81,7 +82,7 @@ export default {
 
 .form-label {
   color: black;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 5px;
   display: block;
 }
@@ -97,8 +98,8 @@ export default {
   width: 100%;
   outline: none;
   border: 2px solid black;
-  background-color: black;
-  color: white;
+  background-color: lightblue;
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
@@ -106,4 +107,5 @@ export default {
 #send:hover {
   background-color: #1E90FF;
 }
+
 </style>

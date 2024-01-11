@@ -1,25 +1,48 @@
-
 <template>
-  <NavView />
-  <FooterView/>
+<section id="space">
+</section>
+  <div id="app">
+    <NavView />
+    <FooterView />
+  </div>
 </template>
 
 <script>
 import FooterView from './components/FooterView.vue';
 import NavView from './components/NavView.vue';
 
-export default{
-  components: { NavView, FooterView }
-}
+export default {
+  components: { NavView, FooterView },
+};
+
+
 </script>
 
 <style>
-
-body{
+body {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(#87CEEB, #1E90FF);
+  margin: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: linear-gradient(-45deg, aquamarine, darkblue, aquamarine, darkblue);
+  background-size: 400% 400%;
+  animation: sky 7s ease infinite;
+}
+
+@keyframes sky {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #app {
@@ -27,14 +50,13 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: black;
 }
 
-.container-fluid{
+.container-fluid {
   background-color: transparent;
 }
 
-.nav-link{
+.nav-link {
   list-style: none;
   font-size: 20px;
   font-weight: bold;
@@ -46,11 +68,17 @@ body{
   text-decoration: underline;
 }
 
-footer{
+.nav-link:hover {
+  color: black;
+}
+
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: black;
+  color: white;
   height: 50px;
+  font-size: 30px;
 }
+
 </style>

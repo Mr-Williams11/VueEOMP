@@ -1,7 +1,7 @@
 <template>
-  <div class="resume-container">
+  <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
-      <div v-for="item in resume" :key="item.id" class="resume-task">
+      <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
         <h3 class="task-title">{{ item.taskName }}</h3>
         <ul class="task-details">
           <li v-for="key in Object.keys(item).filter(k => k !== 'id' && k !== 'taskName')" :key="key">
@@ -20,6 +20,17 @@ export default {
       return this.$store.state.Resume;
     },
   },
+  mounted() {
+    // Add a delay to give the transition effect
+    setTimeout(() => {
+      this.animateTask();
+    }, 100);
+  },
+  methods: {
+    animateTask() {
+      this.$refs.resumeContainer.classList.add('fade-in');
+    },
+  },
 };
 </script>
 
@@ -28,6 +39,12 @@ export default {
   width: 500px;
   margin: 0 auto;
   padding: 20px;
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 7s ease;
+}
+
+.fade-in {
+  opacity: 1; /* Change opacity to 1 when the 'fade-in' class is added */
 }
 
 .resume-section {
@@ -44,10 +61,19 @@ export default {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 10px 10px 5px black;
+  background: linear-gradient(skyblue, blue);
+  box-shadow: 10px 10px 5px lightblue;
   width: 500px;
   height: auto;
+  filter: blur(20px);
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.resume-task:hover {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0px);
 }
 
 .task-title {

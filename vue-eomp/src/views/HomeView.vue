@@ -62,8 +62,9 @@ body {
 }
 
 .header-section h2 {
-  font-size: 3em;
-  text-shadow: 2px 2px 2px white;
+  font-size: 4em;
+  color: black;
+  text-shadow: 10px 10px 5px white;
   animation: slideInLeft 2s ease-out, infinite;
   position: relative;
 }
@@ -71,7 +72,7 @@ body {
 .header-section h1 {
   font-size: 5em;
   color: transparent;
-  background-image: linear-gradient(white, black 75%);
+  background-image: linear-gradient(black, blue);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   animation: scaleIn 1s ease-out;
