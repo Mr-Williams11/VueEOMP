@@ -3,6 +3,7 @@
 </section>
   <div id="app">
     <NavView />
+    <SpinnerView />
     <FooterView />
   </div>
 </template>
@@ -10,11 +11,11 @@
 <script>
 import FooterView from './components/FooterView.vue';
 import NavView from './components/NavView.vue';
+import SpinnerView from './components/SpinnerView.vue';
 
 export default {
-  components: { NavView, FooterView },
+  components: { NavView, FooterView, SpinnerView },
 };
-
 
 </script>
 

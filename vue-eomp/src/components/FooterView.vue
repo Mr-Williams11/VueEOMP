@@ -1,10 +1,14 @@
 <template>
-<footer>&copy; Joel Williams</footer>
+            <footer>&copy Joel Williams <span>{{ currYear }}</span></footer>
 </template>
 <script>
-export default {
-    
-}
+    export default {
+        data() {
+            return {
+                currYear: new Date().getFullYear()
+            }
+        }
+    }
 </script>
 <style>
 footer{

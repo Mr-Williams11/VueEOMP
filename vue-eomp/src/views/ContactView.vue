@@ -6,9 +6,13 @@
         <ul>
           <li>Email: joelwilliams742@gmail.com</li>
           <li>Phone: 062 771 3590</li>
+          <li>Address: 59 Discovery Avenue Maitland Garden Village</li>
         </ul>
+        <div class="image">
+          <a href="https://www.google.com/maps/place/59+Discovery+Ave,+Maitland+Garden+Village,+Cape+Town,+7405/@-33.9374392,18.4871028,17.05z/data=!4m6!3m5!1s0x1dcc5cfaa0b18489:0x4457e03d5696b5af!8m2!3d-33.9369215!4d18.4868976!16s%2Fg%2F11sym242y8?entry=ttu" target="_blank"><img src="https://iili.io/JYJYYTx.png"/></a>
       </div>
     </div>
+  </div>
     <div class="contact-form">
       <form action="https://formspree.io/f/mjvqjgkr" method="POST">
         <div class="form-group">
@@ -106,6 +110,11 @@ export default {
 
 #send:hover {
   background-color: #1E90FF;
+}
+
+img{
+  width: 600px;
+  height: 200px;
 }
 
 </style>

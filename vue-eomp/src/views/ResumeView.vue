@@ -1,4 +1,5 @@
 <template>
+  <h3>Hover me</h3>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
       <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
@@ -35,16 +36,23 @@ export default {
 </script>
 
 <style scoped>
+h3{
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 10px 10px 5px white;
+}
+
 .resume-container {
   width: 500px;
   margin: 0 auto;
   padding: 20px;
-  opacity: 0; /* Initially set opacity to 0 */
-  transition: opacity 7s ease;
+  opacity: 0;
+  transition: opacity 4s ease;
 }
 
 .fade-in {
-  opacity: 1; /* Change opacity to 1 when the 'fade-in' class is added */
+  opacity: 1;
 }
 
 .resume-section {
