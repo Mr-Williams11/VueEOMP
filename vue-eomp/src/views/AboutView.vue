@@ -75,4 +75,33 @@ p {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 300px) {
+  h2 {
+    font-size: 25px;
+    position: relative;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 10px;
+    position: relative; 
+  }
+  .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  top: 10%;
+  width: auto;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.about-image{
+  position: relative;
+  width: auto;
+  height: 150px;
+}
+
+}
 </style>

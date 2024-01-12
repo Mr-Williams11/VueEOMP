@@ -102,11 +102,33 @@ export default {
   top: 15%;
 }
 
+@media (max-width: 300px) {
+  .card {
+    width: 200px;
+    height: max-content;
+    left: 17%;
+  }
+
+  .project-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 5%;
+  }
+
+  .heading {
+    font-size: 18px; 
+  }
+
+  .description {
+    font-size: 12px; 
+  }
+}
+
 .slide-enter-active, .slide-leave-active {
   transition: transform 0.5s;
 }
 .slide-enter, .slide-leave-to {
   transform: translateX(100%);
 }
-
 </style>
