@@ -5,6 +5,10 @@
       <div class="text-container">
         <h2 class="intro">{{ intro }}</h2>
         <h1 class="name">{{ name }}</h1>
+        <h2 class="intro">Im an Aspiring Developer</h2>
+        <a href="https://drive.google.com/file/d/1yWkHrKmpQ1IHK0qbjOTYpcsGblHC-EF2/view?usp=drive_link" target="_blank">
+    <button class="btn">Download CV</button>
+  </a>
       </div>
     </section>
   </div>
@@ -23,7 +27,7 @@ export default {
   mounted() {
     this.$store.dispatch('fetchData');
   },
-};
+}
 </script>
 
 <style scoped>
@@ -72,7 +76,7 @@ body {
 .header-section h1 {
   font-size: 5em;
   color: transparent;
-  background-image: linear-gradient(black, blue);
+  background-image: linear-gradient(white, black 85%);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   animation: scaleIn 1s ease-out;
@@ -105,5 +109,19 @@ body {
   to {
     transform: scale(1);
   }
+}.btn {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #3498db;
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 </style>
