@@ -5,7 +5,7 @@
       <div class="text-container">
         <h2 class="intro">{{ intro }}</h2>
         <h1 class="name">{{ name }}</h1>
-        <h2 class="intro">Im an Aspiring Developer</h2>
+        <h2 class="intro">Im an Aspiring Developer {{ $store.state.Name }}</h2>
         <a href="https://drive.google.com/file/d/1yWkHrKmpQ1IHK0qbjOTYpcsGblHC-EF2/view?usp=drive_link" target="_blank">
     <button class="btn">Download CV</button>
   </a>

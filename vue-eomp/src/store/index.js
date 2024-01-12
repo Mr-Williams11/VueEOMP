@@ -5,12 +5,12 @@ import { createStore } from 'vuex';
 
 export default createStore({
   state: {
-    Intro: '',
-    About: '',
+    Intro: null,
+    About: null,
     Projects: [],
     Resume: [],
     Testimonials: [],
-    Contact: '',
+    Contact: null,
   },
   getters: {
 
@@ -45,29 +45,24 @@ export default createStore({
     async fetchData({ commit }) {
       try {
         // Fetching data using Axios
-        const homeResponse = await axios.get('http://localhost:3000/home');
-        const aboutResponse = await axios.get('http://localhost:3000/about');
-        const projectResponse = await axios.get('http://localhost:3000/projects');
-        const resumeResponse = await axios.get('http://localhost:3000/resume');
-        const testimonialsResponse = await axios.get('http://localhost:3000/testimonials');
-        const contactResponse = await axios.get('http://localhost:3000/contact');
-
-        const homeData = homeResponse.data;
-        const aboutData = aboutResponse.data;
-        const projectData = projectResponse.data;
-        const resumeData = resumeResponse.data;
-        const testimonialData = testimonialsResponse.data;
-        const contactData = contactResponse.data;
-
-        // Committing mutations to set data in state
-        commit('setIntro', homeData[0].intro);
-        commit('setName', homeData[0].name);
-        commit('setInfo', aboutData[0].info);
-        commit('setText1', aboutData[0].text1);
+        const homeResponse = await axios.get('https://mr-williams11.github.io/VueEOMP/vue-eomp/src/data/');
+        const homeData = homeResponse.data.home[0];
+        console.log(homeData.intro);
+        commit('setName', homeData.name);
+        commit('setIntro', homeData.intro);
+        const aboutResponse = await axios.get('https://mr-williams11.github.io/VueEOMP/vue-eomp/src/data/');
+        const aboutData = aboutResponse.data.about[0];
+        commit('setInfo', aboutData.info);
+        commit('setText1', aboutData.text1);
+        const projectResponse = await axios.get('https://mr-williams11.github.io/VueEOMP/vue-eomp/src/data/');
+        const projectData = projectResponse.data.projects;
         commit('setProjects', projectData);
+        const resumeResponse = await axios.get('https://mr-williams11.github.io/VueEOMP/vue-eomp/src/data/');
+        const resumeData = resumeResponse.data.resume;
         commit('setResume', resumeData);
+        const testimonialsResponse = await axios.get('https://mr-williams11.github.io/VueEOMP/vue-eomp/src/data/');
+        const testimonialData = testimonialsResponse.data.testimonials;
         commit('setTestimonials', testimonialData);
-        commit('setContact', contactData[0].infomation);
       } catch (error) {
         console.error('Error fetching data:', error);
       }

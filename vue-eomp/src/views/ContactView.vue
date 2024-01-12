@@ -1,7 +1,7 @@
 <template>
   <div class="contact-container">
     <div class="contact-info">
-      <span>{{ information }}</span>
+      <span>Contact Me:</span>
       <div>
         <ul>
           <li>Email: joelwilliams742@gmail.com</li>
@@ -31,16 +31,7 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    information() {
-      return this.$store.state.Contact;
-    },
-  },
-  mounted() {
-    this.$store.dispatch('fetchData');
-  },
-};
+
 </script>
 
 <style>
