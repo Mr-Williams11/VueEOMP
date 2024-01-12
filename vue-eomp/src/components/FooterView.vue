@@ -11,8 +11,5 @@
     }
 </script>
 <style>
-footer{
-    width: 100%;
-}
 
 </style>

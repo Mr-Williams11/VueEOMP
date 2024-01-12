@@ -159,10 +159,42 @@ export default {
   height: 500px;
 }
 
-.fade-enter-active, .fade-leave-active {
+@media (max-width: 300px) {
+
+  .carousel{
+    display: flex;
+    align-content: center;
+    
+  }
+  .card {
+    width: 180px;
+    height: auto;
+    padding: 0;
+    left: 60px;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .heading {
+    padding-top: 5px;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .github-link {
+    font-size: 18px; 
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>

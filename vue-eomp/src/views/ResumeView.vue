@@ -1,5 +1,5 @@
 <template>
-  <h3>Hover me</h3>
+  <h3>Click me</h3>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
       <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
@@ -103,5 +103,23 @@ h3{
 .task-details li {
   margin-bottom: 10px;
   font-size: 1rem;
+}
+
+@media (max-width: 300px) {
+  .resume-section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    left: 80px;
+  }
+
+  .resume-task {
+    width: 200px;
+    right: 5%;
+  }
+
+  .task-details li{
+    font-size: 10px;
+  }
 }
 </style>

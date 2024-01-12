@@ -16,7 +16,6 @@ import SpinnerView from './components/SpinnerView.vue';
 export default {
   components: { NavView, FooterView, SpinnerView },
 };
-
 </script>
 
 <style>
@@ -75,11 +74,11 @@ body {
 
 footer {
   position: fixed;
-  bottom: 0;
   width: 100%;
   color: white;
+  bottom: 0;
   height: 50px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 </style>
