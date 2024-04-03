@@ -1,4 +1,5 @@
 <template>
+    <h2>Projects:</h2>
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button
@@ -51,22 +52,29 @@ export default {
 </script>
 
 <style scoped>
+h2{
+  position: relative;
+  -webkit-text-stroke: 4px black;
+  left: 0px;
+  transform: rotate(-40deg);
+  font-size: 6em;
+  top: 177px;
+}
+
 .card {
   position: relative;
-  background-color: lightblue;
+  background: linear-gradient(white, grey);
   display: flex;
   flex-direction: column;
   width: 500px; /* Reduced width */
   padding: 8px; /* Reduced padding */
-  height: 350px; /* Reduced height */
-  border-radius: 8px;
+  height: 500px; /* Reduced height */
 }
 
 .project-img {
   width: 70%;
   height: 150px; /* Reduced height */
   object-fit: cover;
-  border-radius: 8px;
   position: relative;
   left: 70px;
 }
@@ -119,41 +127,76 @@ export default {
 .carousel {
   position: relative;
   height: 60vh; /* Reduced height */
-  top: 10%; /* Adjusted top */
   width: 100%; /* Adjusted width */
   left: 700px;
 }
 
 .carousel-inner {
   position: relative;
-  top: 10%;
-  height: 300px; /* Reduced height */
+  height: 350px; /* Reduced height */
 }
 
-@media (max-width: 300px) {
+@media (max-width: 720px) {
   .carousel {
-    display: flex;
-    align-content: center;
+    height: 50vh; /* Reduced height */
+    left: 100px; /* Adjusted left */
   }
 
   .card {
-    width: 150px; /* Further reduced width */
+    width: 300px; /* Adjusted width */
     height: auto;
-    padding: 0;
-    left: 30px; /* Adjusted left */
+    padding: 8px; /* Reset padding */
+    left: 0; /* Adjusted left */
   }
 
   .project-img {
-    height: 120px; /* Further reduced height */
+    width: 100%;
+    height: auto; /* Reset height */
+    object-fit: contain; /* Adjusted object-fit */
+    left: 0; /* Adjusted left */
   }
 
   .heading {
-    padding-top: 3px; /* Reduced padding */
-    font-size: 10px; /* Further reduced font size */
+    padding-top: 0; /* Reset padding */
+    font-size: 18px; /* Adjusted font size */
   }
 
   .github-link {
-    font-size: 12px; /* Further reduced font size */
+    font-size: 14px; /* Adjusted font size */
+  }
+}
+
+/* Media query for 320px */
+@media (max-width: 320px) {
+  h2{
+  font-size: 3em;
+  top: 0px;
+  transform: rotate(0deg);
+  margin-bottom: 80px;
+  -webkit-text-stroke: 2px black;
+}
+
+  .carousel {
+    height: 40vh; /* Further reduced height */
+    left: 0px; /* Further adjusted left */
+  }
+
+  .card {
+    width: 200px;
+    left: 35px; /* Further reduced width */
+  }
+
+  .project-img {
+    width: 80%;
+    left: 10%; /* Adjusted left */
+  }
+
+  .heading {
+    font-size: 14px; /* Further reduced font size */
+  }
+
+  .github-link {
+    font-size: 10px; /* Further reduced font size */
   }
 }
 .fade-enter-active,

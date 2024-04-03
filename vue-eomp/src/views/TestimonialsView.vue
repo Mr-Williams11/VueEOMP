@@ -1,4 +1,5 @@
 <template>
+  <h2>Testimonials:</h2>
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button v-for="(testimonial, index) in testimonials" :key="index" type="button" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="index" :class="{ active: index === 0 }" aria-label="Slide {{ index + 1 }}"></button>
@@ -47,22 +48,30 @@ export default {
 </script>
 
 <style scoped>
+h2{
+  position: relative;
+  -webkit-text-stroke: 4px black;
+  left: 0px;
+  transform: rotate(-40deg);
+  font-size: 6em;
+  top: 165px;
+}
 .card {
   position: relative;
-  background-color: lightblue;
+  background: linear-gradient(white, grey);
   display: flex;
   flex-direction: column;
   width: 500px; /* Reduced width */
   padding: 8px; /* Reduced padding */
-  height: 350px; /* Reduced height */
+  height: 450px; /* Reduced height */
   border-radius: 8px;
 }
 
 .project-img {
   width: 70%;
-  height: 150px; /* Reduced height */
+  height: 200px; /* Reduced height */
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 50%;
   position: relative;
   left: 70px;
 }
@@ -78,8 +87,11 @@ export default {
 }
 
 .card p:not(.heading) {
-  font-size: 12px; /* Reduced font size */
+  font-size: 15px; /* Reduced font size */
   color: #fff;
+  position: relative;
+  top: 50px;
+  left: 10px;
 }
 
 .card p:last-child {
@@ -102,28 +114,73 @@ export default {
   height: 500px; /* Reduced height */
 }
 
-@media (max-width: 300px) {
-  .card {
-    width: 150px; /* Further reduced width */
-    height: max-content;
-    left: 17%; /* Adjusted left */
-  }
-
-  .project-img {
-    width: 100px; /* Further reduced width */
-    height: 100px; /* Further reduced height */
-    position: relative;
+@media (max-width: 720px) {
+  .carousel {
+    height: 50vh; /* Reduced height */
+    top: 5%; /* Adjusted top */
     left: 5%; /* Adjusted left */
   }
 
-  .heading {
-    font-size: 18px; /* Reduced font size */
+  .card {
+    width: 300px; /* Adjusted width */
+    height: auto; /* Adjusted height */
+    left: 0; /* Adjusted left */
   }
 
-  .description {
-    font-size: 12px; /* Reduced font size */
+  .project-img {
+    width: 60%; /* Adjusted width */
+    height: 150px; /* Adjusted height */
+    left: 0; /* Adjusted left */
+  }
+
+  .heading {
+    font-size: 18px; /* Adjusted font size */
+  }
+
+  .card p:not(.heading) {
+    font-size: 12px; /* Adjusted font size */
+    top: 20px; /* Adjusted top */
+    left: 0; /* Adjusted left */
   }
 }
+
+/* Media query for 320px */
+@media (max-width: 320px) {
+  h2{
+  font-size: 2.5em;
+  top: 0px;
+  right: 200px;
+  transform: rotate(0deg);
+  -webkit-text-stroke: 2px black;
+  margin-bottom: 30px;
+  }
+
+  .carousel {
+    height: 55vh; /* Further reduced height */
+    left: 0px;
+    top: 50px;
+    width: 270px;
+  }
+
+  .card {
+    width: 210px;
+    left: 30px; /* Further reduced width */
+  }
+
+  .project-img {
+    width: 50%; /* Further reduced width */
+    height: 100px; /* Further reduced height */
+  }
+
+  .heading {
+    font-size: 16px; /* Further reduced font size */
+  }
+
+  .card p:not(.heading) {
+    font-size: 10px; /* Further reduced font size */
+  }
+}
+
 
 .slide-enter-active, .slide-leave-active {
   transition: transform 0.5s;

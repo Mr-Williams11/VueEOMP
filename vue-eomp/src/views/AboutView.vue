@@ -34,12 +34,12 @@ export default {
 
 .about-image {
   width: 400px;
-    height: 600px;
-    margin-right: 20px;
-    animation: fadeIn 2s ease-out;
-    position: relative;
-    bottom: 30px;
-    background: linear-gradient(-40deg, white 36%, black 35%);
+  height: 600px;
+  margin-right: 20px;
+  animation: fadeIn 2s ease-out;
+  position: relative;
+  bottom: 30px;
+  background: linear-gradient(-40deg, white 36%, black 35%);
 }
 
 h2 {
@@ -74,32 +74,43 @@ p {
   }
 }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 720px) {
+  .about-image {
+    width: 300px;
+    height: 450px;
+  }
+
   h2 {
-    font-size: 25px;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+.about-container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .about-image {
+    width: auto;
+    height: 200px;
     position: relative;
-    text-align: left;
-    padding-top: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   p {
     font-size: 10px;
-    position: relative; 
+    width: 200px;
   }
-  .about-container {
-  display: flex;
-  flex-wrap: wrap;
-  top: 10%;
-  width: auto;
-  height: 200px;
-  border-radius: 8px;
-}
-
-.about-image{
-  position: relative;
-  width: auto;
-  height: 150px;
-}
-
 }
 </style>

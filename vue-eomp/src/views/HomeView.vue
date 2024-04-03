@@ -3,9 +3,9 @@
     <section class="header-section">
       <img src="https://iili.io/J76YW8J.png" alt="Profile Image" class="profile-image" />
       <div class="text-container">
-        <h2 class="intro">{{ intro }}</h2>
+        <h2 class="intro" id="intro">{{ intro }}</h2>
         <h1 class="name">{{ name }}</h1>
-        <h2 class="intro">Im an Aspiring Developer</h2>
+        <h2 class="intro" id="intro">Im an Aspiring Developer</h2>
         <a href="https://drive.google.com/file/d/1yWkHrKmpQ1IHK0qbjOTYpcsGblHC-EF2/view?usp=drive_link" target="_blank">
     <button class="btn">Download CV</button>
   </a>
@@ -33,7 +33,6 @@ export default {
 <style scoped>
   .portfolio {
     width: 100%;
-    padding: 20px;
     position: relative;
     top: 20px;
   }
@@ -73,11 +72,24 @@ export default {
   position: relative;
   left: 150px;
   font-size: 4em;
-  color: black;
-  background-repeat: no-repeat;
+  color: transparent;
+  -webkit-text-stroke: .5px white;
   animation: scaleIn 1s ease-out;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
+  background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+  animation: animateText 6s linear infinite;
+}
+
+@keyframes animateText{
+    0%,95%,100%{
+        background-position: -810px 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
 }
 
   
@@ -130,30 +142,46 @@ export default {
     transition: 1s;
   }
 
-@media (max-width: 300px) {
+@media screen and (max-width: 720px) {
+  .profile-image {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .header-section {
-    height: 70vh;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .profile-image {
-    width: 100px;
+    width: auto;
     height: 200px;
+    position: relative;
+    left: 150px;
+   
   }
 
   .header-section h2 {
     font-size: 2em;
-    position: relative;
   }
 
-  .header-section h1 {
-    position: relative;
-    font-size: 2.5em;
+  .header-section .name{
+    font-size: .7rem;
+  }
+
+  #intro{
+    font-size: 0.7rem;
   }
 
   .btn {
-    position: fixed;
-    left: 50%;
-    top: 2%;
+    position: relative;
+    font-size: 0.5rem;
+    left: 130px;
   }
 }
 </style>

@@ -11,5 +11,16 @@
     }
 </script>
 <style>
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+}
 
+footer span {
+    font-weight: bold;
+}
 </style>

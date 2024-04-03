@@ -1,7 +1,7 @@
 <template>
+  <h2>Contact Me:</h2>
   <div class="contact-container">
     <div class="contact-info">
-      <span>Contact Me:</span>
       <div>
         <ul>
           <li>Email: joelwilliams742@gmail.com</li>
@@ -34,7 +34,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .contact-container {
   display: flex;
   justify-content: flex-end; /* Align everything to the right */
@@ -49,9 +49,13 @@
   padding: 30px;
 }
 
-.contact-info span {
-  font-size: 50px;
-  text-decoration: underline;
+h2{
+  position: relative;
+  -webkit-text-stroke: 4px black;
+  left: 0px;
+  transform: rotate(-40deg);
+  font-size: 6em;
+  top: 45px;
 }
 
 .contact-info ul {
@@ -103,37 +107,67 @@
   background-color: #1E90FF;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 720px) {
   .contact-container {
-    flex-direction: column;
-    align-items: stretch;
-    height: auto;
-    justify-content: center; /* Align items to the center for smaller screens */
+    justify-content: center; /* Align everything to the center */
+    left: 0; /* Adjusted left */
   }
 
-  .contact-info span {
-    font-size: 30px;
+  .contact-info {
+    text-align: center; /* Align text to the center */
+    padding: 20px; /* Adjusted padding */
+  }
+
+  .contact-info ul {
+    margin-right: 0; /* Reset margin */
   }
 
   .contact-info li {
-    font-size: 16px;
+    font-size: 18px; /* Adjusted font size */
   }
 
   .contact-form {
-    width: 100%;
+    width: 80%; /* Adjusted width */
+  }
+}
+
+/* Media query for 320px */
+@media (max-width: 320px) {
+  h2{
+  font-size: 2.5em;
+  top: 0px;
+  transform: rotate(0deg);
+  -webkit-text-stroke: 2px black;
+}
+
+  .contact-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the center */
+    left: 55px;
+    top: 50px /* Adjusted left */
+  }
+
+  .contact-info {
+    padding: 3px; /* Adjusted padding */
+  }
+
+  .contact-info li {
+    font-size: 11px; /* Further reduced font size */
   }
 
   .form-label {
-    font-size: 13px;
-    text-align: left; /* Align labels to the left for smaller screens */
+    font-size: 12px; /* Further reduced font size */
   }
 
   .form-control {
-    font-size: 14px;
+    font-size: 12px; /* Further reduced font size */
+  }
+  .form-group {
+  margin-bottom: 5px;
   }
 
   #send {
-    font-size: 16px;
+    font-size: 10px; /* Adjusted font size */
   }
 }
 
