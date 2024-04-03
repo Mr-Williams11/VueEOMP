@@ -33,32 +33,30 @@ export default {
 }
 
 .about-image {
-  max-width: 100%;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px lightblue;
-  background: linear-gradient(white, black 40%);
-}
-
-.about-content {
-  flex-grow: 1;
+  width: 400px;
+    height: 600px;
+    margin-right: 20px;
+    animation: fadeIn 2s ease-out;
+    position: relative;
+    bottom: 30px;
+    background: linear-gradient(-40deg, white 36%, black 35%);
 }
 
 h2 {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 10px;
-  position: fixed;
-  top: 5%;
+  left: 15%;
+  position: relative;
   color: white;
+  text-align: left;
 }
 
 p {
   font-size: 25px;
   line-height: 1.5;
-  position: fixed;
-  top: 15%;
+  position: relative;
+  left: 15%;
   text-align: left;
   color: white;
 }

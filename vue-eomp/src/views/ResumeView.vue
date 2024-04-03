@@ -1,5 +1,4 @@
 <template>
-  <h3>Click me</h3>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
       <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
@@ -44,11 +43,9 @@ h3{
 }
 
 .resume-container {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  opacity: 0;
-  transition: opacity 4s ease;
 }
 
 .fade-in {
@@ -59,51 +56,40 @@ h3{
   display: flex;
   flex-direction: row;
   gap: 20px;
-  width: 1000px;
   top: 20%;
   left: 18%;
-  position: fixed;
+  position: relative;
 }
 
 .resume-task {
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
-  background: linear-gradient(skyblue, blue);
-  box-shadow: 10px 10px 5px lightblue;
-  width: 500px;
+  background: linear-gradient(white, grey);
+  box-shadow: 5px 5px 5px lightblue;
+  width: 400px;
   height: auto;
-  filter: blur(20px);
-  transform: translateX(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.resume-task:hover {
-  opacity: 1;
-  transform: translateX(0);
-  filter: blur(0px);
+  position: relative;
+  left: 300px;
 }
 
 .task-title {
   align-content: center;
   width: 100%;
-  height: 50px;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  height: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   background-color: black;
   color: white;
-  text-shadow: 5px 5px 5px lightblue;
-}
-
-.task-details {
-  list-style: none;
-  padding: 0;
+  text-shadow: 3px 3px 3px lightblue;
 }
 
 .task-details li {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  list-style: none; 
 }
+
 
 @media (max-width: 300px) {
   .resume-section {

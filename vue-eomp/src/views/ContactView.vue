@@ -37,25 +37,27 @@
 <style>
 .contact-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end; /* Align everything to the right */
   align-items: center;
-  height: 100vh;
+  position: relative;
+  left: 500px;
 }
 
 .contact-info {
-  text-align: center;
+  text-align: left; /* Align text to the right */
   color: white;
+  padding: 30px;
 }
 
 .contact-info span {
   font-size: 50px;
   text-decoration: underline;
-  padding-right: 20px;
 }
 
 .contact-info ul {
   list-style: none;
   padding: 0;
+  margin-right: 20px; /* Adjust margin */
 }
 
 .contact-info li {
@@ -73,10 +75,11 @@
 }
 
 .form-label {
-  color: black;
+  color: white;
   font-size: 25px;
   margin-bottom: 5px;
   display: block;
+  text-align: left; /* Align labels to the right */
 }
 
 .form-control {
@@ -105,6 +108,7 @@
     flex-direction: column;
     align-items: stretch;
     height: auto;
+    justify-content: center; /* Align items to the center for smaller screens */
   }
 
   .contact-info span {
@@ -121,6 +125,7 @@
 
   .form-label {
     font-size: 13px;
+    text-align: left; /* Align labels to the left for smaller screens */
   }
 
   .form-control {
@@ -131,4 +136,5 @@
     font-size: 16px;
   }
 }
+
 </style>

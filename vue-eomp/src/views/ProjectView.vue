@@ -8,8 +8,8 @@
       <div class="carousel-inner" :key="currentIndex">
         <div v-for="(project, index) in projects" :key="index" :class="{ 'carousel-item': true, active: index === currentIndex }">
           <div class="card">
+            <p class="heading">{{ project.taskName }}</p>
           <img :src="project.img" alt="" class="project-img">
-          <p class="heading">{{ project.taskName }}</p>
           <a :href="project.github" target="_blank" class="github-link"><i class="fa-brands fa-github"></i> - GitHub</a>
           <a :href="project.netlify" target="_blank" class="github-link">Netlify - <i class="fa-solid fa-globe"></i></a>
         </div>
@@ -56,80 +56,58 @@ export default {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  left: 32%;
-  width: 500px;
-  padding: 12px;
-  height: 340px;
+  width: 500px; /* Reduced width */
+  padding: 8px; /* Reduced padding */
+  height: 350px; /* Reduced height */
   border-radius: 8px;
 }
 
 .project-img {
-  width: 100%;
-  height: 200px;
+  width: 70%;
+  height: 150px; /* Reduced height */
   object-fit: cover;
   border-radius: 8px;
   position: relative;
-  top: 10%;
-  filter: blur(5px);
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  left: -5px;
-  height: 330px;
-  margin: auto;
-  width: calc(100% + 10px);
-  border-radius: 10px;
-  background: linear-gradient(-45deg, white 0%, black 100%);
-  z-index: -10;
-  pointer-events: none;
-  transition: all 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background-color: white;
-  transform:scale(0.95);
+  left: 70px;
 }
 
 .heading {
-  font-size: 30px;
+  font-size: 20px; /* Reduced font size */
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
   width: 100%;
-  text-align: center;
-  /* background-color: white; */
-  color: white;
-  top: -30%;
+  text-align: left;
+  color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  color: black;
 }
 
 .github-link {
   position: relative;
-  width: 136px;
-  text-align: left;
-  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
   color: black;
-  font-size: 25px;
+  font-size: 16px;
   text-decoration: none;
 }
 
-.github-link:hover{
-  padding: 2px;
-  width: fit-content;
+.github-link:hover {
+  padding: 1px;
+  width: 100%;
+  text-align: center;
   background-color: black;
   color: lightblue;
-  box-shadow: 5px 5px 5px white;
-  border-radius: 8px;
+  box-shadow: 3px 3px 3px white;
+  border-radius: 4px;
 }
+
 .card p:not(.heading) {
-  font-size: 14px;
+  font-size: 12px; /* Reduced font size */
   color: #fff;
 }
 
@@ -138,57 +116,46 @@ export default {
   font-weight: 600;
 }
 
-.card:hover::after {
-  filter: blur(30px);
+.carousel {
+  position: relative;
+  height: 60vh; /* Reduced height */
+  top: 10%; /* Adjusted top */
+  width: 100%; /* Adjusted width */
+  left: 700px;
 }
 
-.card:hover::before {
-  transform: translateY(50px);
-}
-
-.carousel{
-  position: fixed;
-  height: 70vh;
-  top: 15%;
-  width: 100%;
-}
-
-.carousel-inner{
+.carousel-inner {
   position: relative;
   top: 10%;
-  height: 500px;
+  height: 300px; /* Reduced height */
 }
 
 @media (max-width: 300px) {
-
-  .carousel{
+  .carousel {
     display: flex;
     align-content: center;
-    
   }
+
   .card {
-    width: 180px;
+    width: 150px; /* Further reduced width */
     height: auto;
     padding: 0;
-    left: 60px;
+    left: 30px; /* Adjusted left */
   }
 
   .project-img {
-    height: 150px;
+    height: 120px; /* Further reduced height */
   }
 
   .heading {
-    padding-top: 5px;
-    font-size: 15px;
-    color: black;
-    text-transform: uppercase;
+    padding-top: 3px; /* Reduced padding */
+    font-size: 10px; /* Further reduced font size */
   }
 
   .github-link {
-    font-size: 18px; 
+    font-size: 12px; /* Further reduced font size */
   }
 }
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;

@@ -6,8 +6,8 @@
     <transition-group name="slide" tag="div" class="carousel-inner">
       <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === currentIndex }">
         <div class="card">
-          <img :src="testimonial.img" alt="" class="project-img">
           <p class="heading">{{ testimonial.name }}</p>
+          <img :src="testimonial.img" alt="" class="project-img">
           <p class="description">{{ testimonial.Description }}</p>
         </div>
       </div>
@@ -52,76 +52,76 @@ export default {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  left: 32%;
-  top: 0;
-  width: 500px;
-  padding: 12px;
-  height: 400px;
+  width: 500px; /* Reduced width */
+  padding: 8px; /* Reduced padding */
+  height: 350px; /* Reduced height */
   border-radius: 8px;
-  border: 2px solid white;
-  box-shadow: 0 10px 30px white;
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  width: 70%;
+  height: 150px; /* Reduced height */
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 8px;
   position: relative;
-  left: 55%;
-  top: 0;
+  left: 70px;
 }
 
 .heading {
-  position: relative;
-  font-size: 20px;
+  font-size: 20px; /* Reduced font size */
   text-transform: capitalize;
   font-weight: 700;
+  position: relative;
+  width: 100%;
+  text-align: left;
   color: black;
-  display: flex;
 }
 
-.description {
-  line-height: 1.7;
-  margin-bottom: 50px;
-  font-size: 14px;
-  color: black;
+.card p:not(.heading) {
+  font-size: 12px; /* Reduced font size */
+  color: #fff;
+}
+
+.card p:last-child {
   position: relative;
+  color: black;
+  font-weight: 600;
 }
 
 .carousel {
-  position: fixed;
-  height: 80vh;
-  top: 12%;
-  width: 100%;
+  position: relative;
+  height: 70vh; /* Reduced height */
+  top: 10%; /* Adjusted top */
+  width: 100%; /* Adjusted width */
+  left: 700px;/* Positioned on the right-hand side */
 }
 
 .carousel-inner {
   position: relative;
-  top: 15%;
+  top: 10%;
+  height: 500px; /* Reduced height */
 }
 
 @media (max-width: 300px) {
   .card {
-    width: 200px;
+    width: 150px; /* Further reduced width */
     height: max-content;
-    left: 17%;
+    left: 17%; /* Adjusted left */
   }
 
   .project-img {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Further reduced width */
+    height: 100px; /* Further reduced height */
     position: relative;
-    left: 5%;
+    left: 5%; /* Adjusted left */
   }
 
   .heading {
-    font-size: 18px; 
+    font-size: 18px; /* Reduced font size */
   }
 
   .description {
-    font-size: 12px; 
+    font-size: 12px; /* Reduced font size */
   }
 }
 

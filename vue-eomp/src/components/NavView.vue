@@ -35,5 +35,30 @@ export default {
     
 }
 </script>
+
 <style>
+.navbar {
+position: fixed;
+width: 100%;
+top: 15px;
+right: 100px;
+z-index: 1;
+}
+
+.nav-link {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+}
+
+.router-link-exact-active {
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  color: white;
+}
 </style>

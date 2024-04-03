@@ -5,7 +5,7 @@
       <div class="text-container">
         <h2 class="intro">{{ intro }}</h2>
         <h1 class="name">{{ name }}</h1>
-        <h2 class="intro">Im an Aspiring Developer {{ $store.state.Name }}</h2>
+        <h2 class="intro">Im an Aspiring Developer</h2>
         <a href="https://drive.google.com/file/d/1yWkHrKmpQ1IHK0qbjOTYpcsGblHC-EF2/view?usp=drive_link" target="_blank">
     <button class="btn">Download CV</button>
   </a>
@@ -31,18 +31,11 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 1080px){
-
-  body {
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  
   .portfolio {
     width: 100%;
     padding: 20px;
+    position: relative;
+    top: 20px;
   }
   
   .header-section {
@@ -56,10 +49,11 @@ export default {
   .profile-image {
     width: 400px;
     height: 600px;
-    border-radius: 40%;
     margin-right: 20px;
     animation: fadeIn 2s ease-out;
     position: relative;
+    bottom: 30px;
+    background: linear-gradient(-40deg, white 45.3%, black 35%);
   }
   
   .text-container {
@@ -68,19 +62,24 @@ export default {
   }
   
   .header-section h2 {
-    font-size: 4em;
-    color: black;
-    text-shadow: 10px 10px 5px white;
+    left: 100px;
+    font-size: 3.5em;
+    color: white;
     animation: slideInLeft 2s ease-out, infinite;
     position: relative;
   }
   
   .header-section h1 {
-    font-size: 5em;
-    color:  black;
-    background-repeat: no-repeat;
-    animation: scaleIn 1s ease-out;
-  }
+  position: relative;
+  left: 150px;
+  font-size: 4em;
+  color: black;
+  background-repeat: no-repeat;
+  animation: scaleIn 1s ease-out;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
   
   @keyframes fadeIn {
     from {
@@ -109,25 +108,27 @@ export default {
     to {
       transform: scale(1);
     }
-  }.btn {
+  }
+  .btn {
     padding: 10px 20px;
     font-size: 1.2em;
-    background-color: #3498db;
+    background-color: white;
     color: black; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: fixed;
-    top: 2%;
-    left: 2%;
+    position: relative;
+    left: 15%;
   }
   
   .btn:hover {
     background-color: black;
     color: white;
+    border: 2px solid white;
+    box-shadow: 10px 10px 10px white;
+    transition: 1s;
   }
-}
 
 @media (max-width: 300px) {
   .header-section {
@@ -156,3 +157,4 @@ export default {
   }
 }
 </style>
+1

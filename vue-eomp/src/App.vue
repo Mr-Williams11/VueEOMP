@@ -1,6 +1,6 @@
 <template>
-<section id="space">
-</section>
+  <section id="space">
+  </section>
   <div id="app">
     <NavView />
     <SpinnerView />
@@ -20,29 +20,13 @@ export default {
 
 <style>
 body {
-  height: 100vh;
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background: linear-gradient(-45deg, aquamarine, darkblue, aquamarine, darkblue);
-  background-size: 400% 400%;
-  animation: sky 7s ease infinite;
-}
-
-@keyframes sky {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(-40deg, black 65%, white 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
 }
 
 #app {
@@ -52,25 +36,7 @@ body {
   text-align: center;
 }
 
-.container-fluid {
-  background-color: transparent;
-}
 
-.nav-link {
-  list-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-}
-
-.router-link-exact-active {
-  text-decoration: underline;
-}
-
-.nav-link:hover {
-  color: black;
-}
 
 footer {
   position: fixed;
