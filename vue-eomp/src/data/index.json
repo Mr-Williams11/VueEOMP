@@ -19,12 +19,6 @@
                 "netlify":"https://javascript-ecommerce.netlify.app/"
         },
         {
-                "img":"https://iili.io/J74ewWF.md.png",
-                "taskName":"Portfolio",
-                "github": "https://github.com/Mr-Williams11/Portfolio.git",
-                "netlify":"https://joel-williams.netlify.app/"
-        },
-        {
                 "img":"https://iili.io/J74eEUx.md.png",
                 "taskName":"Calculator",
                 "github": "https://github.com/Mr-Williams11/calculator.git",
@@ -45,6 +39,18 @@
         {
                 "img":"https://iili.io/J74egON.md.png",
                 "taskName":"Netflix Clone",
+                "github": "https://github.com/Mr-Williams11/Netflix1.git",
+                "netlify":"https://moviething-clone-134b16.netlify.app/"
+        },
+        {
+                "img":"https://iili.io/J74egON.md.png",
+                "taskName":"Node Project",
+                "github": "https://github.com/Mr-Williams11/Netflix1.git",
+                "netlify":"https://moviething-clone-134b16.netlify.app/"
+        },
+        {
+                "img":"https://iili.io/J74egON.md.png",
+                "taskName":"Capstone Project",
                 "github": "https://github.com/Mr-Williams11/Netflix1.git",
                 "netlify":"https://moviething-clone-134b16.netlify.app/"
         }

@@ -7,7 +7,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse bg-dark" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <router-link to="/" class="nav-link">Home</router-link>
@@ -65,6 +65,7 @@
   
   .nav-link:hover {
     color: white;
+    text-decoration: underline;
   }
   .logo {
     position: relative;
@@ -81,6 +82,10 @@
     color: black;
   }
 
+  .collapse{
+    background-color: transparent;
+  }
+
 @media screen and (max-width: 320px) {
   .logo {
     display: none;
@@ -88,6 +93,10 @@
   .container-fluid{
     position: relative;
     left: 100px;
+  }
+  .collapse{
+    background-color: grey;
+    box-shadow: 0px 0px 20px grey;
   }
 }
   </style>

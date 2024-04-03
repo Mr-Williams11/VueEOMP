@@ -178,12 +178,13 @@ h2{
 
   .carousel {
     height: 40vh; /* Further reduced height */
-    left: 0px; /* Further adjusted left */
+    left: 0px;
+    width: 300px; /* Further adjusted left */
   }
 
   .card {
     width: 200px;
-    left: 35px; /* Further reduced width */
+    left: 50px; /* Further reduced width */
   }
 
   .project-img {
