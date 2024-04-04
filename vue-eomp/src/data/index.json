@@ -59,10 +59,13 @@
         {
                 "id":1,
                 "taskName":"Skills",
-                "skill1": "HTML - Advanced",
-                "skill2": "CSS - Advanced",
-                "skill3": "Bootstrap - Intermediate",
-                "skill4": "Javascript - Intermediate"
+                "skill1": "HTML",
+                "skill2": "CSS",
+                "skill3": "Bootstrap",
+                "skill4": "Javascript",
+                "skill6": "MySQL",
+                "skill7": "Vue",
+                "skill5": "Node"
         },
         {
                 "id":2,

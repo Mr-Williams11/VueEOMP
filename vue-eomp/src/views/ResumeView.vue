@@ -1,5 +1,5 @@
 <template>
-  <h2>Education/Work:</h2>
+  <h2>Experience:</h2>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
       <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
@@ -39,10 +39,10 @@ export default {
 h2{
   position: relative;
   -webkit-text-stroke: 4px black;
-  left: 0px;
+  left:0px;
   transform: rotate(-40deg);
   font-size: 6em;
-  top: 2px;
+  top: 0px;
 }
 
 h3{
