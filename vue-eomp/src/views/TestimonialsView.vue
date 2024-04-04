@@ -128,11 +128,12 @@ h2{
     height: 60vh; /* Further reduced height */
     left: 150px;
     width: 450px;
+    top: 20px;
   }
 
   .card {
     width: 300px;
-    left: 80px;
+    left: 40px;
     height: 280px;
   }
 
@@ -171,7 +172,7 @@ h2{
 
   .card {
     width: 210px;
-    left: 30px;
+    left: 5px;
     height: 250px;
   }
 
