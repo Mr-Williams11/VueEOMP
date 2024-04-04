@@ -76,6 +76,8 @@
     transform: rotate(180deg);
     font-weight: 700;
     left: 150px;
+    bottom: 15px;
+    z-index: 1;
   }
   
   .logo:hover {
@@ -86,7 +88,21 @@
     background-color: transparent;
   }
 
-@media screen and (max-width: 320px) {
+  @media (min-width: 480px) and (max-width: 720px) {
+  .container-fluid{
+    position: relative;
+    left: 100px;
+  }
+  .collapse{
+    background-color: grey;
+    box-shadow: 0px 0px 20px grey;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 460px) {
   .logo {
     display: none;
   }

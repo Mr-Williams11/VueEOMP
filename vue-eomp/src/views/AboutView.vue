@@ -34,11 +34,12 @@ export default {
 
 .about-image {
   width: 400px;
-  height: 600px;
-  margin-right: 20px;
+  height: 500px;
+  margin-right: 40px;
+  left: 20px;
+  bottom: 10px;
   animation: fadeIn 2s ease-out;
   position: relative;
-  bottom: 30px;
   background: linear-gradient(-40deg, white 36%, black 35%);
 }
 
@@ -74,18 +75,25 @@ p {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  .about-container{
+    height: 100vh;
+}
+
   .about-image {
-    width: 300px;
-    height: 450px;
+    width: auto;
+    height: 400px;
+    position: relative;
+    background: linear-gradient(-40deg, white 57.4%, black 35%);
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 3rem;
   }
 
   p {
-    font-size: 20px;
+    font-size: .7rem;
+    width: 300px;
   }
 }
 

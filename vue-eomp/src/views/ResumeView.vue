@@ -1,5 +1,5 @@
 <template>
-  <h2>Resume:</h2>
+  <h2>Education/Work:</h2>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
       <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
@@ -99,30 +99,37 @@ h3{
 }
 
 
-@media (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
+h2{
+  font-size: 3em;
+  top: 27px;
+  -webkit-text-stroke: 2px black;
+}
+
   .resume-section {
-    top: 10%; /* Adjusted top */
-    left: 5%; /* Adjusted left */
+    margin-top: 85px;
+    left: 120px;
   }
 
   .resume-task {
-    width: 300px; /* Adjusted width */
-    left: 100px; /* Adjusted left */
+    width: 230px;
+    left: 0px;
   }
 
   .task-title {
-    font-size: 40px; /* Adjusted font size */
+    font-size: 15px;
   }
 
   .task-details li {
-    font-size: 0.7rem; /* Adjusted font size */
+    font-size: 8px;
+    text-align: left;
   }
 }
 
 /* Media query for 320px */
-@media (max-width: 320px) {
+@media screen and (min-width: 300px) and (max-width: 460px) {
 h2{
-  font-size: 3em;
+  font-size: 2em;
   top: 0px;
   transform: rotate(0deg);
   -webkit-text-stroke: 2px black;

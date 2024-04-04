@@ -68,10 +68,9 @@ h2{
 }
 
 .project-img {
-  width: 70%;
+  width: 50%;
   height: 200px; /* Reduced height */
   object-fit: cover;
-  border-radius: 50%;
   position: relative;
   left: 70px;
 }
@@ -110,42 +109,49 @@ h2{
 
 .carousel-inner {
   position: relative;
-  top: 10%;
-  height: 500px; /* Reduced height */
+  top: 0%;
+  height: 500px;
+  left: 9%;
 }
 
-@media (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  h2{
+  font-size: 2.5em;
+  top: 50px;
+  right: 200px;
+  -webkit-text-stroke: 2px black;
+  margin-bottom: 30px;
+  }
+
   .carousel {
-    height: 50vh; /* Reduced height */
-    top: 5%; /* Adjusted top */
-    left: 5%; /* Adjusted left */
+    height: 60vh; /* Further reduced height */
+    left: 150px;
+    width: 450px;
   }
 
   .card {
-    width: 300px; /* Adjusted width */
-    height: auto; /* Adjusted height */
-    left: 0; /* Adjusted left */
+    width: 300px;
+    left: 80px;
+    height: 280px;
   }
 
   .project-img {
-    width: 60%; /* Adjusted width */
-    height: 150px; /* Adjusted height */
-    left: 0; /* Adjusted left */
+    width: 50%; /* Further reduced width */
+    height: 100px; /* Further reduced height */
   }
 
   .heading {
-    font-size: 18px; /* Adjusted font size */
+    font-size: 16px; /* Further reduced font size */
   }
 
   .card p:not(.heading) {
-    font-size: 12px; /* Adjusted font size */
-    top: 20px; /* Adjusted top */
-    left: 0; /* Adjusted left */
+    font-size: 10px;
+    width: 270px;
   }
 }
 
 /* Media query for 320px */
-@media (max-width: 320px) {
+@media screen and (min-width: 300px) and (max-width: 460px) {
   h2{
   font-size: 2.5em;
   top: 0px;
@@ -164,12 +170,14 @@ h2{
 
   .card {
     width: 210px;
-    left: 30px; /* Further reduced width */
+    left: 30px;
+    height: 250px;
   }
 
   .project-img {
     width: 50%; /* Further reduced width */
-    height: 100px; /* Further reduced height */
+    height: 100px;
+    border-radius: 50%; /* Further reduced height */
   }
 
   .heading {
@@ -177,7 +185,8 @@ h2{
   }
 
   .card p:not(.heading) {
-    font-size: 10px; /* Further reduced font size */
+    width: 185px;
+    font-size: 7px;
   }
 }
 

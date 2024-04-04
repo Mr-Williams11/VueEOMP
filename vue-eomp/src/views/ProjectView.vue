@@ -115,7 +115,7 @@ h2{
 }
 
 .card p:not(.heading) {
-  font-size: 12px; /* Reduced font size */
+  font-size: 12px;
   color: #fff;
 }
 
@@ -126,48 +126,52 @@ h2{
 
 .carousel {
   position: relative;
-  height: 60vh; /* Reduced height */
-  width: 100%; /* Adjusted width */
+  height: 60vh;
+  width: 100%;
   left: 700px;
 }
 
 .carousel-inner {
   position: relative;
-  height: 350px; /* Reduced height */
+  height: 350px;
 }
 
-@media (max-width: 720px) {
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  h2{
+  font-size: 4em;
+  top: 15px;
+  margin-bottom: 80px;
+  -webkit-text-stroke: 2px black;
+}
+
   .carousel {
-    height: 50vh; /* Reduced height */
-    left: 100px; /* Adjusted left */
+    height: 60vh;
+    left: 50px;
+    width: 570px;
   }
 
   .card {
-    width: 300px; /* Adjusted width */
-    height: auto;
-    padding: 8px; /* Reset padding */
-    left: 0; /* Adjusted left */
+    width: 350px;
+    height: 250px;
+    top: 40px;
+    left: 120px;
   }
 
   .project-img {
-    width: 100%;
-    height: auto; /* Reset height */
-    object-fit: contain; /* Adjusted object-fit */
-    left: 0; /* Adjusted left */
+    width: 80%;
+    left: 10%;
   }
 
   .heading {
-    padding-top: 0; /* Reset padding */
-    font-size: 18px; /* Adjusted font size */
+    font-size: 14px;
   }
 
   .github-link {
-    font-size: 14px; /* Adjusted font size */
+    font-size: 10px;
   }
 }
 
-/* Media query for 320px */
-@media (max-width: 320px) {
+@media screen and (min-width: 300px) and (max-width: 460px) {
   h2{
   font-size: 3em;
   top: 0px;
@@ -177,27 +181,28 @@ h2{
 }
 
   .carousel {
-    height: 40vh; /* Further reduced height */
+    height: 40vh;
     left: 0px;
-    width: 270px; /* Further adjusted left */
+    width: 270px;
   }
 
   .card {
     width: 200px;
-    left: 35px; /* Further reduced width */
+    left: 35px;
+    height: 200px;
   }
 
   .project-img {
     width: 80%;
-    left: 10%; /* Adjusted left */
+    left: 10%;
   }
 
   .heading {
-    font-size: 14px; /* Further reduced font size */
+    font-size: 14px;
   }
 
   .github-link {
-    font-size: 10px; /* Further reduced font size */
+    font-size: 10px;
   }
 }
 .fade-enter-active,
