@@ -2,12 +2,32 @@
   <h2>Experience:</h2>
   <div class="resume-container" ref="resumeContainer">
     <div class="resume-section">
-      <div v-for="item in resume" :key="item.id" class="resume-task" @mouseover="animateTask">
-        <h3 class="task-title">{{ item.taskName }}</h3>
+      <div class="resume-task">
+        <h3 class="task-title">Education</h3>
         <ul class="task-details">
-          <li v-for="key in Object.keys(item).filter(k => k !== 'id' && k !== 'taskName')" :key="key">
-            {{ item[key] }}
-          </li>
+          <li>Pinelands Primary School 2008 - 2015</li>
+          <li>Pinelands High School 2016 - 2020</li>
+          <h4><b>Skills:</b></h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Javascript</li>
+              <li>Node</li>
+              <li>MySQL</li>
+              <li>Vue</li>
+            </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="resume-section">
+      <div class="resume-task">
+        <h3 class="task-title">Work Experience</h3>
+        <ul class="task-details">
+          <h4>NMC:</h4> March 2021 - April 2021
+          <h4>Zone Fitness:</h4> May 2021 - September 2021
+          <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
+          <h4>Life Choices Studio:</h4>2024 - Current
         </ul>
       </div>
     </div>
@@ -15,24 +35,7 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    resume() {
-      return this.$store.state.Resume;
-    },
-  },
-  mounted() {
-    // Add a delay to give the transition effect
-    setTimeout(() => {
-      this.animateTask();
-    }, 100);
-  },
-  methods: {
-    animateTask() {
-      this.$refs.resumeContainer.classList.add('fade-in');
-    },
-  },
-};
+
 </script>
 
 <style scoped>
@@ -42,7 +45,7 @@ h2{
   left:0px;
   transform: rotate(-40deg);
   font-size: 6em;
-  top: 0px;
+  top: 17px;
 }
 
 h3{
@@ -55,6 +58,7 @@ h3{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
 }
 
 .fade-in {
@@ -64,7 +68,7 @@ h3{
 .resume-section {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 50px;
   top: 20%;
   left: 18%;
   position: relative;
@@ -97,6 +101,11 @@ h3{
   font-size: 0.8rem;
   list-style: none;
   text-align: left;
+}
+
+h4{
+  text-align: left;
+  text-decoration: underline;
 }
 
 
