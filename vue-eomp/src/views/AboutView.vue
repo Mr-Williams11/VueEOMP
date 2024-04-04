@@ -97,7 +97,7 @@ p {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 300px) and (max-width: 460px) {
 .about-container{
     height: 100vh;
     display:flex;

@@ -24,11 +24,19 @@
       <div class="resume-task">
         <h3 class="task-title">Work Experience</h3>
         <ul class="task-details">
-          <h4>NMC:</h4> March 2021 - April 2021
-          <h4>Zone Fitness:</h4> May 2021 - September 2021
-          <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
-          <h4>Life Choices Studio:</h4>2024 - Current
-        </ul>
+  <li>
+    <h4>NMC:</h4> March 2021 - April 2021
+  </li>
+  <li>
+    <h4>Zone Fitness:</h4> May 2021 - September 2021
+  </li>
+  <li>
+    <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
+  </li>
+  <li>
+    <h4>Life Choices Studio:</h4> 2024 - Current
+  </li>
+</ul>
       </div>
     </div>
   </div>
@@ -154,17 +162,27 @@ h2{
   }
 
   .resume-task {
-    width: 230px;
+    width: 120px;
+    height: 320px;
     left: 0px;
+    top: 70px
   }
 
   .task-title {
-    font-size: 15px;
+    font-size: 12px;
+    padding: 0;
   }
 
-  .task-details li {
+  .task-details li, h4, h3 {
     font-size: 7px;
     text-align: left;
+    left: 0px;
+    margin-right: 20px;
+    padding: 0;
+  }
+  ul{
+    padding: 0;
+
   }
 }
 
