@@ -7,6 +7,7 @@
         <ul class="task-details">
           <li>Pinelands Primary School 2008 - 2015</li>
           <li>Pinelands High School 2016 - 2020</li>
+          <li>Life Choices Academy September 2023 - March 2024</li>
           <h4><b>Skills:</b></h4>
             <ul>
               <li>HTML</li>
@@ -24,18 +25,18 @@
       <div class="resume-task">
         <h3 class="task-title">Work Experience</h3>
         <ul class="task-details">
-  <li>
-    <h4>NMC:</h4> March 2021 - April 2021
-  </li>
-  <li>
-    <h4>Zone Fitness:</h4> May 2021 - September 2021
-  </li>
-  <li>
-    <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
-  </li>
-  <li>
-    <h4>Life Choices Studio:</h4> 2024 - Current
-  </li>
+          <li>
+            <h4>Life Choices Studio:</h4> 2024 - Current
+          </li>
+          <li>
+            <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
+          </li>
+          <li>
+            <h4>Zone Fitness:</h4> May 2021 - September 2021
+          </li>
+          <li>
+            <h4>NMC:</h4> March 2021 - April 2021
+          </li>
 </ul>
       </div>
     </div>
