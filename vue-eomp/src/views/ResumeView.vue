@@ -6,7 +6,7 @@
         <h3 class="task-title">{{ item.taskName }}</h3>
         <ul class="task-details">
           <li v-for="key in Object.keys(item).filter(k => k !== 'id' && k !== 'taskName')" :key="key">
-            <strong>{{ item[key] }}</strong>
+            {{ item[key] }}
           </li>
         </ul>
       </div>
@@ -95,7 +95,8 @@ h3{
 .task-details li {
   margin-bottom: 5px;
   font-size: 0.8rem;
-  list-style: none; 
+  list-style: none;
+  text-align: left;
 }
 
 

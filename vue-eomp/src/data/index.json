@@ -59,8 +59,8 @@
         {
                 "id":1,
                 "taskName":"Education",
-                "skill8": "PineLands Primary School 2008 - 2015",
-                "skill9": "PineLands High School 2016 - 2020",
+                "skill8": "Pinelands Primary School 2008 - 2015",
+                "skill9": "Pinelands High School 2016 - 2020",
                 "skill1": "HTML",
                 "skill2": "CSS",
                 "skill3": "Bootstrap",
@@ -73,11 +73,13 @@
                 "id":2,
                 "taskName":"Work Experience",
                 "work1": "NMC",
-                "des1":"Clearing and preparation of files for liquidators.",
+                "des1": "March 2021 - April 2021",
                 "work2": "Zone Fitness",
-                "des2":"Login and register members. Answer telephones to deal with clients/enquiries. Meet and greet members at the front desk. Assisted with equipment setting up for members. Did personal training procedures.",
+                "des2": "May 2021 - September 2021",
                 "work3": "Department of Cultural Affairs and Sport (Internal Control)",
-                "des3":"Post Auditing. Scanning of payment batches. Receiving and storing of payment batches. Minutes of meetings. Delivering of payment batches."
+                "des3":"April 2022 - March 2023",
+                "work4": "Life Choices Studio",
+                "des4":"2024 - Current"
         }
     ],
 
