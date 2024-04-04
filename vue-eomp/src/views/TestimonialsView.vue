@@ -72,7 +72,8 @@ h2{
   height: 200px; /* Reduced height */
   object-fit: cover;
   position: relative;
-  left: 70px;
+  left: 25%;
+  border: 2px solid black;
 }
 
 .heading {

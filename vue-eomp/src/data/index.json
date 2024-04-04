@@ -43,16 +43,16 @@
                 "netlify":"https://moviething-clone-134b16.netlify.app/"
         },
         {
-                "img":"https://iili.io/J74egON.md.png",
+                "img":"https://iili.io/JNEcNiN.png",
                 "taskName":"Node Project",
-                "github": "https://github.com/Mr-Williams11/Netflix1.git",
-                "netlify":"https://moviething-clone-134b16.netlify.app/"
+                "github": "https://github.com/Mr-Williams11/Nodeeomp.git",
+                "netlify":"https://techtopia-website-ce8d0.web.app/"
         },
         {
-                "img":"https://iili.io/J74egON.md.png",
+                "img":"https://iili.io/JNEcklt.png",
                 "taskName":"Capstone Project",
-                "github": "https://github.com/Mr-Williams11/Netflix1.git",
-                "netlify":"https://moviething-clone-134b16.netlify.app/"
+                "github": "https://github.com/Mr-Williams11/Capestone-Frontend.git",
+                "netlify":"https://capstone-project-69548.web.app/"
         }
     ],
     "resume": [
