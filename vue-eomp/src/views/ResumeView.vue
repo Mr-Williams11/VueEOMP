@@ -5,20 +5,17 @@
       <div class="resume-task">
         <h3 class="task-title">Education</h3>
         <ul class="task-details">
-          <li>Pinelands Primary School 2008 - 2015</li>
-          <li>Pinelands High School 2016 - 2020</li>
-          <li>Life Choices Academy September 2023 - March 2024</li>
+          <h4><b>Schools:</b></h4>
+              <li>Life Choices Academy: September 2023 - March 2024</li>
+              <li>Pinelands High School: 2016 - 2020</li>
+              <li>Pinelands Primary School: 2008 - 2015</li>
           <h4><b>Skills:</b></h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-              <li>Node</li>
-              <li>MySQL</li>
-              <li>Vue</li>
+              <li>HTML  |  CSS  | Bootstrap  |  Javascript |  Node.JS  |  MySQL  |  Vue.Js  |  GitHub  |  Linux  </li>
+          <h4><b>Badges:</b></h4>
+              <li>Operating system basics</li>
+              <li>LC Scrum Challenge</li>
+              <li>Junior Cybersecurity Analyst</li>
             </ul>
-        </ul>
       </div>
     </div>
     <div class="resume-section">
@@ -26,16 +23,16 @@
         <h3 class="task-title">Work Experience</h3>
         <ul class="task-details">
           <li>
-            <h4>Life Choices Studio:</h4> 2024 - Current
+            <h4>Life Choices Studio:</h4> April 2024 - Current
           </li>
           <li>
             <h4>Department of Cultural Affairs and Sport (Internal Control):</h4>April 2022 - March 2023
           </li>
           <li>
-            <h4>Zone Fitness:</h4> May 2021 - September 2021
+            <h4>Zone Fitness:</h4> May 2018 - September 2018
           </li>
           <li>
-            <h4>NMC:</h4> March 2021 - April 2021
+            <h4>NMC:</h4> March 2017 - April 2017
           </li>
 </ul>
       </div>
@@ -54,7 +51,7 @@ h2{
   left:0px;
   transform: rotate(-40deg);
   font-size: 6em;
-  top: 17px;
+  top: 35px;
 }
 
 h3{
@@ -87,8 +84,7 @@ h3{
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 8px;
-  background: linear-gradient(white, grey);
-  box-shadow: 5px 5px 5px white;
+  color: white;
   width: 400px;
   height: auto;
   position: relative;
@@ -101,7 +97,7 @@ h3{
   height: 30px;
   font-size: 1.2rem;
   margin-bottom: 5px;
-  background-color: black;
+  border: 1px solid #ccc;
   color: white;
 }
 
@@ -110,6 +106,7 @@ h3{
   font-size: 0.8rem;
   list-style: none;
   text-align: left;
+  position: relative;
 }
 
 h4{

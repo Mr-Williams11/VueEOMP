@@ -11,9 +11,8 @@
         <h1 class="name">{{ name }}</h1>
         <h2 class="intro" id="intro">Im an Aspiring Developer</h2>
         <a
-          href="https://drive.google.com/file/d/1yWkHrKmpQ1IHK0qbjOTYpcsGblHC-EF2/view?usp=drive_link"
-          target="_blank"
-        >
+          href="https://drive.google.com/file/d/1xfnK2VRuGw5yBNwsHLXDCfkNhSz-PRze/view?usp=drive_link"
+          target="_blank">
           <button class="btn">Download CV</button>
         </a>
       </div>
@@ -53,13 +52,14 @@ export default {
 }
 
 .profile-image {
-  width: 400px;
-  height: 600px;
-  margin-right: 20px;
+  width: 300px;
+  height: 500px;
+  margin-right: 40px;
+  left: 20px;
+  bottom: 50px;
   animation: fadeIn 2s ease-out;
   position: relative;
-  bottom: 12px;
-  background: linear-gradient(-40deg, white 45.3%, black 35%);
+  background: linear-gradient(-40deg, white 36%, black 35%);
 }
 
 .text-container {

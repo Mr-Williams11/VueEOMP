@@ -54,8 +54,9 @@ h2{
   left: 0px;
   transform: rotate(-40deg);
   font-size: 6em;
-  top: 165px;
+  top: 140px;
 }
+
 .card {
   position: relative;
   background: linear-gradient(white, grey);
@@ -63,8 +64,9 @@ h2{
   flex-direction: column;
   width: 500px; /* Reduced width */
   padding: 8px; /* Reduced padding */
-  height: 450px; /* Reduced height */
+  height: 370px; /* Reduced height */
   border-radius: 8px;
+  left: 10px;
 }
 
 .project-img {
@@ -81,8 +83,8 @@ h2{
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
-  width: 100%;
-  text-align: left;
+  width: 65%;
+  text-align: center;
   color: black;
 }
 
@@ -90,8 +92,10 @@ h2{
   font-size: 15px; /* Reduced font size */
   color: #fff;
   position: relative;
-  top: 50px;
+  top: 10px;
   left: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .card p:last-child {
@@ -102,10 +106,10 @@ h2{
 
 .carousel {
   position: relative;
-  height: 70vh; /* Reduced height */
+  height: 60vh; /* Reduced height */
   top: 10%; /* Adjusted top */
-  width: 100%; /* Adjusted width */
-  left: 700px;/* Positioned on the right-hand side */
+  width: 110%; /* Adjusted width */
+  left: 600px;/* Positioned on the right-hand side */
 }
 
 .carousel-inner {

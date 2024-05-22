@@ -1,5 +1,5 @@
 <template>
-    <h2>Projects:</h2>
+  <h2>Projects:</h2>
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button
@@ -55,10 +55,10 @@ export default {
 h2{
   position: relative;
   -webkit-text-stroke: 4px black;
-  left: 0px;
+  left: 70px;
   transform: rotate(-40deg);
   font-size: 6em;
-  top: 177px;
+  top: 80px;
 }
 
 .card {
@@ -66,9 +66,10 @@ h2{
   background: linear-gradient(white, grey);
   display: flex;
   flex-direction: column;
-  width: 500px; /* Reduced width */
+  width: 500px;
   padding: 8px; /* Reduced padding */
-  height: 500px; /* Reduced height */
+  height: 300px;
+  left: 80px; /* Reduced height */
 }
 
 .project-img {
@@ -96,22 +97,22 @@ h2{
 
 .github-link {
   position: relative;
-  width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 4px;
   color: black;
   font-size: 16px;
   text-decoration: none;
+  padding: 2px;
 }
 
 .github-link:hover {
-  padding: 1px;
-  width: 100%;
-  text-align: center;
   background-color: black;
-  color: lightblue;
-  box-shadow: 3px 3px 3px white;
-  border-radius: 4px;
+  width: 90px;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 10px 10px 10px white;
+  text-align: center;
+  transition: 1s;
 }
 
 .card p:not(.heading) {
@@ -126,9 +127,9 @@ h2{
 
 .carousel {
   position: relative;
-  height: 60vh;
-  width: 100%;
-  left: 700px;
+  height: 50vh;
+  width: 130%;
+  left: 600px;
 }
 
 .carousel-inner {
