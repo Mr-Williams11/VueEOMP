@@ -15,6 +15,7 @@
               <li>Operating system basics</li>
               <li>LC Scrum Challenge</li>
               <li>Junior Cybersecurity Analyst</li>
+              <li>Ethical Hacker</li>
             </ul>
       </div>
     </div>
