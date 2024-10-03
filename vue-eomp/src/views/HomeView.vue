@@ -20,6 +20,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   computed: {
@@ -50,6 +51,7 @@ export default {
   align-items: center;
   justify-content: flex-start;
 }
+
 
 .profile-image {
   width: 300px;
